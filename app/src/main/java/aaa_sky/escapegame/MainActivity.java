@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void toStage1(View view) {
         Intent intent = new Intent(MainActivity.this, Stage1Activity.class);
-        startActivity(intent);
+        super.startActivity(intent);
     }
 
     public void toStage2(View view) {
         Intent intent = new Intent(MainActivity.this, Stage2Activity.class);
-        startActivity(intent);
+        super.startActivity(intent);
     }
 }

@@ -7,10 +7,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textStageSelect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/stage_select"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,8 +20,8 @@
 
     <ImageView
         android:id="@+id/toStage1Button"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:contentDescription="@string/stage1"
         android:onClick="toStage1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,8 +34,8 @@
 
     <ImageView
         android:id="@+id/toStage2Button"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:contentDescription="@string/stage2"
         android:onClick="toStage2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,5 +45,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/textStage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stage1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textStage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stage2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

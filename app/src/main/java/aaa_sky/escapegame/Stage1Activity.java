@@ -13,6 +13,6 @@ public class Stage1Activity extends AppCompatActivity {
     }
 
     public void toMain(View view) {
-        finish();
+        super.finish();
     }
 }
