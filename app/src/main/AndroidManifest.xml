@@ -16,8 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Stage1Activity" />
-        <activity android:name=".Stage2Activity"></activity>
+        <activity
+            android:name=".Stage1Activity"
+            android:label="@string/stage1" />
+        <activity
+            android:name=".Stage2Activity"
+            android:label="@string/stage2" />
     </application>
 
 </manifest>
