@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">EscapeGame</string>
+    <string name="stage_select">StageSelect</string>
+    <string name="stage1">Stage1</string>
+    <string name="stage2">Stage2</string>
 </resources>
