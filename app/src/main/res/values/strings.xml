@@ -3,5 +3,6 @@
     <string name="stage_select">StageSelect</string>
     <string name="stage1">Stage1</string>
     <string name="stage2">Stage2</string>
+    <string name="door">Door</string>
     <string name="close">Close</string>
 </resources>

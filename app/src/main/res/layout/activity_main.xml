@@ -52,11 +52,10 @@
         android:layout_height="wrap_content"
         android:text="@string/stage1"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/toStage1Button"
+        app:layout_constraintEnd_toStartOf="@+id/toStage1Button"
+        app:layout_constraintStart_toEndOf="@+id/toStage1Button"
+        app:layout_constraintTop_toBottomOf="@+id/toStage1Button" />
 
     <TextView
         android:id="@+id/textStage2"
@@ -64,10 +63,37 @@
         android:layout_height="wrap_content"
         android:text="@string/stage2"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/toStage2Button"
+        app:layout_constraintEnd_toStartOf="@+id/toStage2Button"
+        app:layout_constraintStart_toEndOf="@+id/toStage2Button"
+        app:layout_constraintTop_toBottomOf="@+id/toStage2Button" />
+
+    <ImageView
+        android:id="@+id/clearStateStage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/stage1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/toStage1Button"
+        app:layout_constraintEnd_toStartOf="@+id/toStage1Button"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/toStage1Button"
+        app:layout_constraintTop_toBottomOf="@+id/toStage1Button"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@android:drawable/presence_online" />
+
+    <ImageView
+        android:id="@+id/clearStateStage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/stage2"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/toStage2Button"
+        app:layout_constraintEnd_toStartOf="@+id/toStage2Button"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/toStage2Button"
+        app:layout_constraintTop_toBottomOf="@+id/toStage2Button"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@android:drawable/presence_online" />
 
 </android.support.constraint.ConstraintLayout>
